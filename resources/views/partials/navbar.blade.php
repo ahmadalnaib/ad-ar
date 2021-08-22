@@ -25,6 +25,12 @@
                   </li>
               @endif
           @else
+          <li class="nav-item nav-link">
+              <a class="btn icon-btn btn-light" href="{{route('ad.create')}}">
+                  <span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+                  اضف اعلان جديد
+              </a>
+          </li>
               <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                       {{ Auth::user()->name }}
