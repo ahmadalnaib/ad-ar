@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('App\HTTP\ViewComposers\CategoryComposer');
+        $this->app->singleton('App\HTTP\ViewComposers\CountryComposer');
     }
 
     /**
