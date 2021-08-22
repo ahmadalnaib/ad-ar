@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer(
+            ['partials.categoryNav','partials.searchform','lists.categories'],'App\HTTP\ViewComposers\CategoryComposer'
+        );
+        view()->composer(['partials.searchform','lists.countries'],'App\HTTP\ViewComposers\CountryComposer');
     }
 }

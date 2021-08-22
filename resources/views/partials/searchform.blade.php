@@ -6,13 +6,14 @@
           <div class="form-group col-md-3">
               <select class="form-control" name="category" >
                   <option value="">--اختر التصنيف--</option>
+                @include('lists.categories')
                 
               </select>
           </div>
           <div class="form-group col-md-3">
               <select class="form-control" name="country" >
                   <option value="">--اختر الدولة--</option>
-                
+              @include('lists.countries')
               </select>
           </div>
           <div class="form-group col-md-4">
